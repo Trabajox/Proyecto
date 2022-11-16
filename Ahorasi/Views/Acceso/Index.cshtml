@@ -1,0 +1,35 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width"/>
+    <title>Index</title>
+    <link rel="stylesheet" href="~/Estilos/StyleSheet2.css" />
+    @Styles.Render("~/Content/css")
+</head>
+<body>       
+                <div class="login-box">
+                    <img src="~/Estilos/avatar.jpg" class="avatar"  />
+                    <h1>Login </h1>
+                    <form action="@Url.Action("Index","Acceso")" method="post">
+                        
+                            <p>Email</p>
+                            <input class="form-control" type="email" name="correo" />                                               
+                            <p>Password</p>
+                            <input class="form-control" type="password" name="clave" />                       
+                        <input type="submit" name="submit" value="Login" />
+                    </form>
+
+                    <p>Cuentas para ingresar</p>
+                    <h9>tlopza@gmail.com -- 123 -- Administrador</h9>
+                    <h9>dgarayf@gmail.com -- 456 -- Seguridad</h9>
+                    <h9>cgarayb@gmail.com -- 789 -- Estudiante</h9>
+                </div>    
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+</body>
+</html>

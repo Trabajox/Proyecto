@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Mi aplicación ASP.NET</title> 
+    <link rel="stylesheet" href="~/Estilos/StyleSheet1.css"/>
+    
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars">☰</i>
+        </label>
+        <ul class="">
+            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+            <li>@Html.ActionLink("Acerca de", "About", "Home")</li>
+            <li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
+            <li>@Html.ActionLink("Cerrar Sesion", "CerrarSesion", "Home")</li>
+        </ul>
+    </nav>
+
+    <header class="header">
+        <div class="container">
+            <div class="btn-menu">
+                <label for="btn-menu">☰</label>
+            </div>
+            <div class="logo" >
+                <h1>Logotipo</h1>
+            </div>
+            
+        </div>
+    </header>
+    <div class="capa"></div>
+    <!--	--------------->
+    <input type="checkbox" id="btn-menu">
+    <div class="container-menu">
+        <div class="cont-menu">
+            <nav>
+                <a>@Html.ActionLink("Home", "Index", "Home")</a>
+                <a>@Html.ActionLink("Contacto", "Contact", "Home")</a>
+                <a>@Html.ActionLink("Acerca de", "About", "Home")</a>
+                <a>@Html.ActionLink("Ingreso Usuarios", "Create", "Usuarios")</a>
+                <a>@Html.ActionLink("Ingreso Vehiculos ", "Create", "VehiculosRs")</a>
+                <a>@Html.ActionLink("Parqueadero", "Index", "VehiculosRs")</a>
+                <a>@Html.ActionLink("Usuarios", "Index", "Usuarios")</a>
+            </nav>
+            <label for="btn-menu">✖️</label>
+        </div>
+    </div>
+
+    @RenderBody()
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

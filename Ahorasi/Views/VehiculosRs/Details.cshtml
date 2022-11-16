@@ -1,0 +1,71 @@
+﻿@model Ahorasi.BD.VehiculosR
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<link rel="stylesheet" href="~/Estilos/StyleSheet7.css" />
+
+<div class="todo">
+    <div class="info">
+        <h2>Details</h2>
+        <div>
+            <h4>VehiculosR</h4>
+            <hr />
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.Fecha)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Fecha)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.TipoVehiculo)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.TipoVehiculo)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Color)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Color)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Placa)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Placa)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Marca)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Marca)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Usuarios.Nombres)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Usuarios.Nombres)
+                </dd>
+
+            </dl>
+        </div>
+        <button>@Html.ActionLink("Edit", "Edit", new { id = Model.Id_Vehiculo })</button>
+        <button>@Html.ActionLink("Back to List", "Index")</button>         
+        </div>
+</div>

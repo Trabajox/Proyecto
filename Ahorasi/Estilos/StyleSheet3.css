@@ -1,0 +1,13 @@
+﻿.hol {
+    background: url(parqueadero.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: calc(100vh - 60px);
+}
+
+.gas {
+    background: url(permiso.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: calc(100vh - 60px);
+}

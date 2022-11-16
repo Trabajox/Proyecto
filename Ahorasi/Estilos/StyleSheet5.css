@@ -1,0 +1,32 @@
+﻿.todo {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background: url(hol.jpg) no-repeat;
+    background-size: cover;
+    min-height: 90vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.info {
+    position: relative;
+    display:flex;
+    width: 800px;
+    height: 300px;
+    gap: 30px;
+    color: #000000;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(#b7328d, #ac18c0);
+    right: -255px;
+    top: 30px;
+    border-radius: 20px;
+}
+
+table{
+    top:50px;
+    align-items:center;
+    justify-content:center;
+}
+
